@@ -14,5 +14,53 @@ CHIP Mux16 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Not (in=sel, out=notSEL);
+	And (a=a[0], b=notSEL, out=AandnotSEL0);
+	And (a=sel, b=b[0], out=BandSEL0);
+	And (a=a[1], b=notSEL, out=AandnotSEL1);
+	And (a=sel, b=b[1], out=BandSEL1);
+	And (a=a[2], b=notSEL, out=AandnotSEL2);
+	And (a=sel, b=b[2], out=BandSEL2);
+	And (a=a[3], b=notSEL, out=AandnotSEL3);
+	And (a=sel, b=b[3], out=BandSEL3);
+	And (a=a[4], b=notSEL, out=AandnotSEL4);
+	And (a=sel, b=b[4], out=BandSEL4);
+	And (a=a[5], b=notSEL, out=AandnotSEL5);
+	And (a=sel, b=b[5], out=BandSEL5);
+	And (a=a[6], b=notSEL, out=AandnotSEL6);
+	And (a=sel, b=b[6], out=BandSEL6);
+	And (a=a[7], b=notSEL, out=AandnotSEL7);
+	And (a=sel, b=b[7], out=BandSEL7);
+	And (a=a[8], b=notSEL, out=AandnotSEL8);
+	And (a=sel, b=b[8], out=BandSEL8);
+	And (a=a[9], b=notSEL, out=AandnotSEL9);
+	And (a=sel, b=b[9], out=BandSEL9);
+	And (a=a[10], b=notSEL, out=AandnotSEL10);
+	And (a=sel, b=b[10], out=BandSEL10);
+	And (a=a[11], b=notSEL, out=AandnotSEL11);
+	And (a=sel, b=b[11], out=BandSEL11);
+	And (a=a[12], b=notSEL, out=AandnotSEL12);
+	And (a=sel, b=b[12], out=BandSEL12);
+	And (a=a[13], b=notSEL, out=AandnotSEL13);
+	And (a=sel, b=b[13], out=BandSEL13);
+	And (a=a[14], b=notSEL, out=AandnotSEL14);
+	And (a=sel, b=b[14], out=BandSEL14);
+	And (a=a[15], b=notSEL, out=AandnotSEL15);
+	And (a=sel, b=b[15], out=BandSEL15);
+	Or (a=AandnotSEL0, b=BandSEL0, out=out[0]);
+	Or (a=AandnotSEL1, b=BandSEL1, out=out[1]);
+	Or (a=AandnotSEL2, b=BandSEL2, out=out[2]);
+	Or (a=AandnotSEL3, b=BandSEL3, out=out[3]);
+	Or (a=AandnotSEL4, b=BandSEL4, out=out[4]);
+	Or (a=AandnotSEL5, b=BandSEL5, out=out[5]);
+	Or (a=AandnotSEL6, b=BandSEL6, out=out[6]);
+	Or (a=AandnotSEL7, b=BandSEL7, out=out[7]);
+	Or (a=AandnotSEL8, b=BandSEL8, out=out[8]);
+	Or (a=AandnotSEL9, b=BandSEL9, out=out[9]);
+	Or (a=AandnotSEL10, b=BandSEL10, out=out[10]);
+	Or (a=AandnotSEL11, b=BandSEL11, out=out[11]);
+	Or (a=AandnotSEL12, b=BandSEL12, out=out[12]);
+	Or (a=AandnotSEL13, b=BandSEL13, out=out[13]);
+	Or (a=AandnotSEL14, b=BandSEL14, out=out[14]);
+	Or (a=AandnotSEL15, b=BandSEL15, out=out[15]);
 }
